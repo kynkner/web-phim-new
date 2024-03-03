@@ -1,7 +1,6 @@
 package org.example.webphim.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.webphim.entity.Blog;
 import org.example.webphim.entity.Movie;
 import org.example.webphim.entity.Review;
 import org.example.webphim.model.enums.MovieType;
@@ -106,13 +105,13 @@ public class MovieController {
 //        return "web/chi-tiet-bai-viet";
 //    }
 
-    @GetMapping("/dang-nhap")
+    @GetMapping("/dangnhap")
     public String getLogin() {
-        return "dang-nhap";
+        return "dangnhap";
     }
 
-    @GetMapping("/dang-ky")
+    @GetMapping("/dangky")
     public String getSignUp() {
-        return "dang-ky";
+        return "Dangky";
     }
 }

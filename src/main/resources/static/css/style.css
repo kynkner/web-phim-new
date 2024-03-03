@@ -2,13 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
+
+}
+body{
+    background-color: rgb(89, 94, 94) !important;
+}
+section{
+    background-color: #1a1d20 !important;
 }
 .movie-poster{
     height: 250px;
 }
 .movie-poster img{
     object-fit: cover;
+}
+h1{
+    color: red;
 }
 
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="movie-item" th:fragment="movie-item(movie)">
+    <a th:href="@{/phim/{id}/{slug} (id=${movie.id}, slug=${movie.slug})}" class="movie-media">
+        <div class="movie-poster rounded overflow-hidden">
+            <img th:src="${movie.poster}" th:alt="${movie.title}" class="w-100 h-100">
+        </div>
+        <p class="mt-2" th:text="${movie.title}">Thế Giới Ma Quái 2</p>
+    </a>
+</div>
+</body>
+</html>
