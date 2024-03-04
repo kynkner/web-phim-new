@@ -107,11 +107,11 @@ public class MovieController {
 
     @GetMapping("/dangnhap")
     public String getLogin() {
-        return "dangnhap";
+        return "auth/dangnhap";
     }
 
     @GetMapping("/dangky")
     public String getSignUp() {
-        return "Dangky";
+        return "auth/Dangky";
     }
 }

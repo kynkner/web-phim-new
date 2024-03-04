@@ -5,44 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- immport css -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
     <link rel="stylesheet" href="/lib/bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/lib/fontawesome-free-6.5.1-web/css/all.min.css">
 </head>
 <body class="body">
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/img/phimmoi.png" alt="" width="180px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/static">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/phimbo">Phim Bộ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/phimchieurap">Phim Chiếu Rạp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/phimle">Phim Lẻ</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-                <a href="#"><button class="btn btn-outline-success" type="submit">Đăng Nhập</button></a>
-
-            </div>
-        </div>
-    </nav>
-</header>
+<th:block th:replace="~{/fragments/header :: header}"></th:block>
   <section>
     <div class="card card1" style="width: 30rem;">
         <div class="card-body ">
@@ -80,7 +48,7 @@
       </div>
    </div>
 </section>
- 
-   <script src="/js/main.js"></script>
+  <th:block th:replace="~{/fragments/footer :: footer}"></th:block>
+   <script src="/js/main1.js"></script>
 </body>
 </html>

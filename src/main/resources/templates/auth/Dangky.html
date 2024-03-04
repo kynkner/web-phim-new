@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/lib/bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/lib/fontawesome-free-6.5.1-web/css/all.min.css">
 </head>
-<body >
+<body class="body">
+<th:block th:replace="~{/fragments/header :: header}"></th:block>
     <div class="card card2" style="width: 30rem;">
         <div class="card-body ">
           <h5 class="card-title fs-2">Đăng ký</h5>
@@ -110,12 +111,12 @@
           </div>
           <hr  width="100%"/>
 
-          <p class="newacc">Đã có tài khoản quay lại đăng nhập -> <a href="dangnhap.html">Đăng nhập</a></p>
+          <p class="newacc">Đã có tài khoản quay lại đăng nhập -> <a href="/dangnhap">Đăng nhập</a></p>
         </div>
       </div>
    </div>
 
- 
+    <th:block th:replace="~{/fragments/footer :: footer}"></th:block>
    <script src="/js/main1.js"></script>
 </body>
 </html>
